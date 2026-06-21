@@ -1,0 +1,21 @@
+.counter {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-variant-numeric: tabular-nums;
+}
+
+.small {
+  font-size: 1.25rem;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.large {
+  font-size: 2.75rem;
+}

@@ -1,0 +1,50 @@
+.timeline{
+
+  position:absolute;
+
+  top:20px;
+
+  right:20px;
+
+  width:320px;
+
+  background:#111827;
+
+  border:1px solid #374151;
+
+  border-radius:12px;
+
+  padding:20px;
+
+  color:white;
+
+  box-shadow:
+  0 0 20px
+  rgba(0,0,0,.3);
+}
+
+.event{
+
+  margin:10px 0;
+
+  padding:10px;
+
+  background:#1f2937;
+
+  border-radius:8px;
+
+  animation:
+  fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+ from{
+  opacity:0;
+ }
+
+ to{
+  opacity:1;
+ }
+
+}

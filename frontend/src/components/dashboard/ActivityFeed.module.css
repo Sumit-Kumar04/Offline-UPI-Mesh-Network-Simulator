@@ -1,0 +1,63 @@
+.feed {
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.event {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: var(--radius-md);
+  border-left: 3px solid transparent;
+  transition: background 0.2s ease;
+}
+
+.event:hover {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.icon {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.message {
+  font-size: 0.8125rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.time {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-top: 4px;
+}
+
+.packet_created { border-left-color: var(--accent-blue); }
+.gossip { border-left-color: var(--accent-purple); }
+.received { border-left-color: var(--accent-cyan); }
+.gateway { border-left-color: var(--accent-green); }
+.upload { border-left-color: var(--accent-green); }
+.duplicate { border-left-color: var(--accent-yellow); }
+.invalid { border-left-color: var(--accent-red); }
+.settled { border-left-color: var(--accent-green); }
+.ack { border-left-color: var(--accent-purple); }
+.reset { border-left-color: var(--text-muted); }
