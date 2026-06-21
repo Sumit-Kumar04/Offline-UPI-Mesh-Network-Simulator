@@ -72,7 +72,7 @@ Alice ── Bob          Charlie ── David
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/offline-upi-mesh.git
+git clone https://github.com/Sumit-Kumar04/Offline-UPI-Mesh-Network-Simulator.git
 cd offline-upi-mesh
 ```
 
