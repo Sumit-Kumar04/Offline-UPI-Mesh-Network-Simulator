@@ -186,4 +186,4 @@ MIT
 
 ## Author
 
-Major Project — Offline UPI Mesh Network Simulator
+Sumit-Kumar04 — Offline UPI Mesh Network Simulator
