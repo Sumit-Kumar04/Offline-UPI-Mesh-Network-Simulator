@@ -187,3 +187,13 @@ MIT
 ## Author
 
 Sumit-Kumar04 — Offline UPI Mesh Network Simulator
+
+
+
+
+##Image
+<img width="1911" height="902" alt="Screenshot 2026-06-21 180135" src="https://github.com/user-attachments/assets/54a92cc5-d420-495e-8df4-1a3481a92490" />
+<img width="1890" height="857" alt="Screenshot 2026-06-21 180148" src="https://github.com/user-attachments/assets/85387add-2c3a-4b25-8882-d470465717af" />
+<img width="1887" height="905" alt="Screenshot 2026-06-21 180203" src="https://github.com/user-attachments/assets/b508e676-94d9-4d07-a41d-5e97f349e845" />
+
+
