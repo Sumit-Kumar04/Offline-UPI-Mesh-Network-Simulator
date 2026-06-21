@@ -5,6 +5,15 @@
   padding: 0 24px 48px;
   max-width: 1600px;
   margin: 0 auto;
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    padding: 0 12px 32px;
+  }
 }
 
 .meshSection {
@@ -20,11 +29,22 @@
   position: relative;
 }
 
+@media (max-width: 640px) {
+  .meshCard {
+    min-height: 380px;
+  }
+
+  .meshInner {
+    height: 360px;
+  }
+}
+
 .mainGrid {
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 24px;
   margin-bottom: 24px;
+  min-width: 0;
 }
 
 @media (max-width: 1200px) {
@@ -38,6 +58,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-bottom: 24px;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .mainGrid,
+  .bottomGrid,
+  .sideStack {
+    gap: 16px;
+  }
+
+  .section {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -63,6 +96,15 @@
   color: var(--text-muted);
   border-top: 1px solid var(--border-glass);
   margin-top: 16px;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 16px 0;
+    font-size: 0.6875rem;
+    line-height: 1.5;
+  }
 }
 
 .footer strong {

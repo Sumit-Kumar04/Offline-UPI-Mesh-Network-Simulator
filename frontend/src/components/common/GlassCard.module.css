@@ -6,6 +6,8 @@
   -webkit-backdrop-filter: blur(16px);
   box-shadow: var(--shadow-card);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .card:hover {
@@ -26,6 +28,31 @@
 
 .spacious {
   padding: 32px;
+}
+
+@media (max-width: 640px) {
+  .default {
+    padding: 16px;
+  }
+
+  .spacious {
+    padding: 20px;
+  }
+
+  .compact {
+    padding: 12px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    word-break: break-word;
+  }
 }
 
 .header {

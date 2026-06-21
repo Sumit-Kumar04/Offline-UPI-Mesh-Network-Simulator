@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .feed {
+    max-height: 320px;
+  }
 }
 
 .empty {

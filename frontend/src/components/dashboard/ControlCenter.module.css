@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
 
 .form {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   align-items: end;
 }
@@ -14,6 +15,12 @@
 @media (max-width: 900px) {
   .form {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .form {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -40,6 +47,8 @@
   color: var(--text-primary);
   font-size: 0.9375rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  min-width: 0;
 }
 
 .input:focus,
@@ -64,6 +73,19 @@
   transition: all 0.25s ease;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 540px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 .btn::before {
@@ -233,9 +255,33 @@
   .steps {
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
   }
 
   .connector {
     display: none;
+  }
+
+  .step {
+    flex: 0 1 auto;
+    min-width: 64px;
+  }
+
+  .stepLabel {
+    font-size: 0.5625rem;
+    max-width: 64px;
+  }
+}
+
+@media (max-width: 540px) {
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .stepGroup {
+    display: flex;
+    justify-content: center;
   }
 }

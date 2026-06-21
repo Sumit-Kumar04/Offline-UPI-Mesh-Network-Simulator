@@ -13,6 +13,33 @@
   border-radius: var(--radius-xl);
   box-shadow: 0 0 40px rgba(139, 92, 246, 0.2);
   backdrop-filter: blur(12px);
+  width: calc(100% - 32px);
+  max-width: 520px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 540px) {
+  .banner {
+    bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 16px;
+    width: calc(100% - 24px);
+  }
+
+  .path {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .message {
+    font-size: 0.8125rem;
+    word-break: break-word;
+  }
+
+  .pulse {
+    display: none;
+  }
 }
 
 .icon {

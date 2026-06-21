@@ -8,11 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 14px 16px;
   background: rgba(15, 23, 42, 0.5);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   transition: all 0.3s ease;
+  min-width: 0;
 }
 
 .itemActive {
@@ -27,6 +29,8 @@
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--text-primary);
+  min-width: 0;
+  word-break: break-word;
 }
 
 .sublabel {
@@ -43,6 +47,19 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
 }
 
 .dot {
@@ -89,4 +106,6 @@
   font-size: 0.8125rem;
   color: var(--accent-green);
   font-weight: 600;
+  word-break: break-word;
+  min-width: 0;
 }
